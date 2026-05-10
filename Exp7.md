@@ -1,9 +1,9 @@
-'''
+
 hosts.ini 
 [local] 
 localhost ansible_connection=local 
-'''
-'''
+
+
 setup.yml 
 --- 
 - name: Message Playbook
@@ -13,7 +13,7 @@ setup.yml
   - name: Print Hello Message
     debug:
      msg: "Hello from Ansible"
-'''
+
 
 **wget https://bootstrap.pypa.io/get-pip.py 
 python3 get-pip.py --user 
@@ -23,5 +23,5 @@ echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc source ~/.bashrc
 export LC_ALL=C.UTF-8 
 export LANG=C.UTF-8 
 ansible --version 
-ansible-playbook -i hosts.ini setup.yml **
+ansible-playbook -i hosts.ini setup.yml**
 
