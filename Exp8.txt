@@ -12,7 +12,8 @@ mv ~/apache-maven-3.9.5 ~/maven
 echo 'export PATH=$PATH:~/maven/bin' >> ~/.bashrc source ~/.bashrc 
 mvn -version 
 
-cd Desktop 
+mkdir urname
+cd urname
 mvn archetype:generate -DgroupId=com.example -DartifactId=hello-world DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false 
 cd hello-world 
 mvn package 
